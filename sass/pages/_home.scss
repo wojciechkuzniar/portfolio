@@ -1,0 +1,48 @@
+
+.section {
+    padding: 0 2rem;
+    margin-bottom: 10rem;
+    width: 100%;
+
+    &__main {
+        box-shadow: 0 0 5rem rgba($primary-color, .2);
+        background: linear-gradient(to left bottom, $primary-light-color, $secondary-color);
+        max-width: 100rem;
+        width: 100%;
+        margin:  0 auto;
+        position: relative;
+        padding: 10rem;
+        overflow: hidden;
+        border-radius: .5rem;
+
+        @include respond (phone) { 
+            padding: 5rem 2.5rem
+        }
+        
+
+        &--title {
+            margin-top: -5rem;
+            padding: 0 0 5rem;
+
+            
+        }
+
+        &--foot {
+            display: flex;
+            justify-content: space-between;
+
+            @include respond (phone) { 
+                flex-direction: column;
+        
+                .btn {
+                  width: 100%;
+        
+                  &:first-child {
+                    margin-bottom: 2rem;
+                  }
+                }
+            }
+            
+        }
+    }
+}

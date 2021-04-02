@@ -1,0 +1,25 @@
+.contact {
+    border: 3px solid $color-grey-dark;
+    padding: 2rem;
+    margin-left: 2rem;
+    border-radius: 3px;
+
+    &__row {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        &--icon {
+            width: 3rem;
+            margin-right: 1rem;
+            color: $secondary-color;
+            font-size: 2rem;
+        }
+
+        &--text {
+            padding-top: .5rem;
+        }
+    }
+}

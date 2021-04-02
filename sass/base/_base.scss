@@ -1,0 +1,68 @@
+* ,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //10px
+    
+    @include respond (tab-land) { //width<1200px
+        font-size: 56.25%; // 1rem =9px 9/16 =56.25
+    }
+
+    @include respond (tab-port) { //width <900px
+        font-size: 50%; //1rem=8px 8/16=50
+    }
+
+    @include respond (big-desktop) {
+        font-size: 75%; //1rem=12px 12/16
+    }
+}
+
+body {
+    box-sizing: border-box;
+    padding: 2rem;
+    font-family: $ff-primary;
+    line-height: 1.5;
+    color: $primary-color;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../img/bg-medium1.jpg);
+    background-attachment: fixed;
+    height: 100%;
+    padding: 10rem 0;
+    position: relative;
+    z-index: -2;
+    
+
+    &::before {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $primary-light-color;
+        opacity: 0.5; 
+        content: '';
+        
+    }
+}
+
+main {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background-color: $color-grey-dark;
+    color: $color-white;
+}

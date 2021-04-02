@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!--Navigation-->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="about.html" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="portfolio.html" class="navigation__link">Portfolio</a></li>
+                <li class="navigation__item"><a href="skills.html" class="navigation__link">Skills</a></li>
+                <li class="navigation__item"><a href="contact.html" class="navigation__link">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    <!--Navigation End-->
+
+    <!--Loader-->
+    <div id="loader-wrapper" class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+     <!--Loader End-->
+
+    <main>
+        <section class="section">
+            <!--Background vid-->
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop> 
+                    <source src="img/video.mp4" type="video/mp4">
+                        Your browser is not supported!
+                </video>
+            </div>
+            <!--Background vid End-->
+            <div class="section__main">
+               <div class="section__main--title">
+                   <p class="paragraph--title">portfolio</p>
+               </div>
+               <div class="row u-margin-top-medium">
+
+                   <div class="col-1-of-3">
+                       <div class="portfolio">
+                           <div class="portfolio__side portfolio__side--front">
+                               <div class="portfolio__picture portfolio__picture--1">
+                                   &nbsp;
+                               </div>
+                               <div class="portfolio__details">
+                                   <p class="paragraph--portfolio">Project 1</p>
+                                   <ul>
+                                        <li>React</li>
+                                        <li>JS</li>
+                                        <li>Node.js</li>
+                                    </ul>
+                               </div>
+                            </div>
+                            <div class="portfolio__side portfolio__side--back portfolio__side--back-all">
+                                <div class="portfolio__click">
+                                    <a href="#" class="fab fa-github"></a>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+
+                    <div class="col-1-of-3">
+                        <div class="portfolio">
+                            <div class="portfolio__side portfolio__side--front">
+                                <div class="portfolio__picture portfolio__picture--2">
+                                    &nbsp;
+                                </div>
+                                <div class="portfolio__details">
+                                    <p class="paragraph--portfolio">Project 2</p>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>SASS</li>
+                                        <li>BEM Methodology</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="portfolio__side portfolio__side--back portfolio__side--back-all">
+                                <div class="portfolio__click">
+                                    <a href="#" class="fab fa-github"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3">
+                        <div class="portfolio">
+                            <div class="portfolio__side portfolio__side--front">
+                                <div class="portfolio__picture portfolio__picture--3">
+                                    &nbsp;
+                                </div>
+                                <div class="portfolio__details">
+                                    <p class="paragraph--portfolio">Project 3</p>
+                                    <ul>
+                                         <li>Bootstrap</li>
+                                         <li>Rest API</li>
+                                     </ul>
+                                </div>
+                             </div>
+                             <div class="portfolio__side portfolio__side--back portfolio__side--back-all">
+                                 <div class="portfolio__click">
+                                     <a href="#" class="fab fa-github"></a>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+
+               </div>
+                
+               <div class="section__main--foot">
+                    <a href="about.html" class="btn btn--pop btn--animated btn--before"><span><i class="fas fa-long-arrow-alt-left"></i>About me</span></a>
+                    <a href="skills.html" class="btn btn--pop btn--animated"><span>Skills<i class="fas fa-long-arrow-alt-right"></i></span></a>
+               </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>

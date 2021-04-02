@@ -1,0 +1,98 @@
+
+
+.heading-primary {
+
+    font-family: $ff-secondary;
+    line-height: 1.2;
+    
+
+    &--name {
+        font-size: 4.8rem;
+        font-weight: 500;
+        display: inline-block;
+        animation: moveInRight 1s ease-out;
+        background-image: linear-gradient(to right, $primary-color, $secondary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent; 
+        transition: all .3s;
+        
+        
+        &:hover {
+            transform: skewY(1deg) skewX(5deg) scale(1.1);
+            text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+        }
+
+    }
+
+    &--title {
+        font-size: 3.2rem;
+        font-weight: 300;
+        color: $secondary-color;
+        display: inline-block;
+        background-image: linear-gradient(to left, $primary-color, $secondary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent; 
+        
+        animation: moveInBottom 1s ease-out;
+    }
+
+    &--main {
+        display: inline-block;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.2rem;
+        color: $secondary-color;
+        
+        animation: moveInLeft 1s ease-out;
+    }
+}
+
+.paragraph {
+    font-size: 1.4rem;
+
+    @include respond (tab-port) { 
+        margin-bottom: 2rem;
+    }
+
+    &--title {
+
+        font-size: 12rem;
+        line-height: 1;
+        font-weight: 700;
+        font-family: $ff-secondary;
+        margin-right: -5rem;
+        text-align: center;
+        opacity: .25;
+
+       
+
+        @include respond (tab-land) { 
+            font-size: 10rem; 
+        }
+  
+       
+
+        @include respond (tab-port) { 
+            font-size: 8rem; 
+            margin-right: -25px;
+        }
+  
+       
+        @include respond (phone) { 
+            font-size: 5rem; 
+            margin-right: 0;
+        }
+    
+    }
+
+    &--portfolio {
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 300;
+        font-family: $ff-secondary;
+        
+    }
+}

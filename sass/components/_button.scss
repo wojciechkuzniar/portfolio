@@ -1,0 +1,112 @@
+
+.btn {
+    &,
+    &:link,
+    &:visited {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    border: 3px solid $primary-color;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: $primary-color;
+    position: relative;
+    transition: all .4s ease;
+    cursor: pointer;
+    
+    
+    
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        color: $primary-light-color;
+        
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+
+        &::before {
+            width: 100%;
+        }
+    }
+
+    &:active,
+    &:focus {
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        
+    }
+
+   
+
+
+    span {
+        position: relative;
+
+        i {
+            margin-left: 1rem;
+            font-size: 1.6rem;
+        }
+    }
+
+
+    &::before {
+        content: '';
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $primary-color;
+        transition: all .4s ease;
+        
+        
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        transition: all 1s;
+        
+       
+    }
+
+    &--pop {
+        background-color: $primary-light-color;
+        color: $primary-color;
+
+        &::after {
+            background-color: $primary-light-color;
+           }
+    }
+
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s ;
+        animation-fill-mode: backwards;
+    }
+
+    
+
+    &--before {
+
+        span {
+
+            i {
+                margin-left: 0;
+                margin-right: 1rem;
+            }
+        }
+    }
+}

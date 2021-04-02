@@ -1,0 +1,38 @@
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
+    
+    &:not(:last-child) {
+        
+
+        @include respond (tab-port) {
+            margin-bottom: $gutter-vertical-small;
+        }
+    }
+
+    @include respond (tab-port) {
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
+
+    @include clearfix;
+
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal; 
+
+            @include respond (tab-port) {
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small; 
+            }
+        }
+
+        @include respond (tab-port) {
+            width: 100% !important;
+        }
+    }
+}

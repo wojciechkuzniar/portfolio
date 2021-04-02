@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!--Navigation-->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="about.html" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="portfolio.html" class="navigation__link">Portfolio</a></li>
+                <li class="navigation__item"><a href="skills.html" class="navigation__link">Skills</a></li>
+                <li class="navigation__item"><a href="contact.html" class="navigation__link">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    <!--Navigation End-->
+
+    <!--Loader-->
+    <div id="loader-wrapper" class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+     <!--Loader End-->
+
+    <main>
+        <section class="section">
+           
+            <div class="section__main">
+               <div class="section__main--title">
+                   <p class="paragraph--title">contact</p>
+               </div>
+               <div class="contact">
+                   <h2 class="heading-primary--title u-margin-bottom-medium">Contact me</h2>
+                   <div class="contact__content">
+                       <div class="contact__content--left">
+                           
+                            <form class="form">
+
+                               <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Full name" id="name" required autocomplete="off">
+                                    <label for="name" class="form__label">Full name</label>
+                               </div>
+
+                               <div class="form__group">
+                                    <input type="email" class="form__input" placeholder="Email" id="email" required autocomplete="off">
+                                    <label for="email" class="form__label">Email</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Subject" id="subject" required autocomplete="off">
+                                    <label for="subject" class="form__label">Subject</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <textarea  class="form__input" placeholder="Your message" id="message" required autocomplete="off"></textarea>
+                                    <label for="message" class="form__label">Your message</label>
+                                </div>
+
+                                <button class="form_submit">Contact me</button>
+
+                            </form>
+
+                       </div>
+
+                       <div class="contact__content--right">
+                            <div class="contact">
+                                <div class="contact__row">
+                                    <div class="contact__row--icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact__row--text">
+                                        <h3 class="heading-primary">Email</h3>
+                                        <p class="paragraph">wojciech.kuzniar@gmail.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact__row">
+                                    <div class="contact__row--icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact__row--text">
+                                        <h3 class="heading-primary">Phone</h3>
+                                        <p class="paragraph">+48 662 203 715</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact__row">
+                                    <div class="contact__row--icon">
+                                        <i class="fas fa-address-card"></i>
+                                    </div>
+                                    <div class="contact__row--text">
+                                        <h3 class="heading-primary">Address</h3>
+                                        <p class="paragraph">Lorem, ipsum dolor.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                       </div>
+                   </div>
+               </div>
+               
+            </div>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
